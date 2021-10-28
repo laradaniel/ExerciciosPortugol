@@ -12,21 +12,26 @@ programa
 		excedente. 
 		*/
 
-		inteiro horas, excesso
+		inteiro horas, excesso, c
 		real salarioTotal, salarioExcedente
 
+		escreva("Digite o seu código: ")
+		leia(c)
+		
 		escreva("Digite a quantidade de horas trabalhadas: ")
 		leia(horas)
 
 		se(horas<=50){
 			salarioTotal=horas*10
-			escreva("O salário total é igual a: R$", salarioTotal)
+			limpa()
+			escreva("Código: ",c, "\nO salário total: R$", salarioTotal)
 		}
-		senao se(horas>50){
+		senao{
 			excesso=horas-50
-			salarioTotal=50*10
+			salarioTotal=(excesso*20) + 500
 			salarioExcedente=excesso*20
-			escreva("Salário total igual a: R$",salarioTotal, "\nSalário excedente igual a: R$",salarioExcedente)
+			limpa()
+			escreva("Código: ",c, "\nSalário total igual a: R$",salarioTotal, "\nSalário excedente igual a: R$",salarioExcedente)
 		}
 		
 	}
@@ -37,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 526; 
+ * @POSICAO-CURSOR = 1037; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
