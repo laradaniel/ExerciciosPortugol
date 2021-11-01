@@ -14,19 +14,22 @@ programa
 		escreva("Digite o terceiro número: ")
 		leia(c)
 
-		se(a>b){
-			se(b>c){
-				escreva(c ," ", b , " ", a)
-			}senao se(a>c){
-				escreva(b, " ",c," ",a)
-			}
-		}
 		se(a<b){
 			se(a>c){
-				escreva(c," ",a, " ",b)
-			}senao se(c>b){
-				escreva(a," ",b," ",c)
+				escreva(c ," ", a , " ", b)
+			}senao se(b<c){
+				escreva(a, " ",b," ",c)
+			}senao{
+				escreva(a," ",c," ",b)
 			}
+		}senao se(b<a){
+				se(a<c){
+					escreva(b," ",a, " ",c)
+				}senao se(c<b){
+					escreva(c," ",b," ",a)
+				}senao{
+					escreva(b," ",c," ",a)
+				}
 		}
 	}
 }
@@ -35,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 511; 
+ * @POSICAO-CURSOR = 592; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
