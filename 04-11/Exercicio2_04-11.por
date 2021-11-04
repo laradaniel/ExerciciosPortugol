@@ -11,13 +11,6 @@ programa
 		*/
 
 		inteiro dado[10], media, cont=0, maior=0, x=0, soma=0
-
-		escreva("\nDigite qual o valor do dado lançado: ")
-		leia(dado[x])
-
-		se(dado[x]>maior){
-			maior=dado[x]
-			}
 		
 		para(x=0;x<10;x++){
 			escreva("\nDigite qual o valor do dado lançado: ")
@@ -47,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 731; 
+ * @POSICAO-CURSOR = 390; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
